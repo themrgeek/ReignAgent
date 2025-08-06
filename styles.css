@@ -1,0 +1,194 @@
+/* style.css */
+
+/* Color Palette based on Logo (Royal Blue) */
+:root {
+    --primary-blue: #4169E1; /* Royal Blue */
+    --primary-dark: #2A4C9B; /* A darker shade for headings */
+    --secondary-dark: #495057; /* Dark grey for body text */
+    --light-bg: #F8F9FA; /* Light background for sections */
+    --white: #FFFFFF;
+    --dark: #212529; /* Dark for footer */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--secondary-dark);
+    line-height: 1.6;
+    background-color: var(--light-bg);
+    overflow-x: hidden; /* Prevent horizontal scroll due to animations */
+}
+
+/* Custom background for navbar using primary blue */
+.bg-primary-custom {
+    background-color: var(--primary-blue) !important;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('[https://placehold.co/1920x600/4169E1/ffffff?text=ReignAgent+AI+Background](https://placehold.co/1920x600/4169E1/ffffff?text=ReignAgent+AI+Background)') no-repeat center center;
+    background-size: cover;
+    color: var(--white);
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-section .lead {
+    font-size: 1.5rem;
+}
+
+.btn-light {
+    color: var(--primary-blue);
+    background-color: var(--white);
+    border-color: var(--white);
+    transition: all 0.3s ease;
+}
+
+.btn-light:hover {
+    background-color: var(--primary-dark);
+    color: var(--white);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+/* Section Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-dark);
+}
+
+.text-primary-dark {
+    color: var(--primary-dark) !important;
+}
+
+.text-secondary-dark {
+    color: var(--secondary-dark) !important;
+}
+
+/* Featurette Sections (for products/projects) */
+.featurette-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.featurette img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* About Us Team Cards */
+.team-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.team-card img {
+    object-fit: cover;
+    height: 250px; /* Fixed height for consistent card images */
+}
+
+
+/* Call to Action Section */
+.cta-section {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 5rem 0;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.cta-section h2 {
+    color: var(--white);
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--dark);
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .hero-section h1 {
+        font-size: 4rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .hero-section {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+    .hero-section h1 {
+        font-size: 4.5rem;
+    }
+    .featurette-heading {
+        font-size: 3rem;
+    }
+    .featurette.order-md-2 {
+        text-align: right; /* Align text right for alternate layout */
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .hero-section h1 {
+        font-size: 5rem;
+    }
+    .featurette-heading {
+        font-size: 3.5rem;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .hero-section h1 {
+        font-size: 5.5rem;
+    }
+}
+
+/* Further adjustments for mobile */
+@media (max-width: 767.98px) {
+    .hero-section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .hero-section .lead {
+        font-size: 1.2rem;
+    }
+    .featurette {
+        text-align: center;
+    }
+    .featurette-heading {
+        font-size: 2rem;
+    }
+    .featurette img {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .navbar-brand img {
+        width: 30px;
+        height: 30px;
+    }
+    .navbar-brand span {
+        font-size: 1.2rem;
+    }
+    .team-card img {
+        height: 200px; /* Adjust height for smaller screens */
+    }
+}

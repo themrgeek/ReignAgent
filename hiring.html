@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join ReignAgent - Careers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #00ffcc;
+      --dark: #0a0a0a;
+      --light: #f8f9fa;
+    }
+    
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--dark);
+      color: var(--light);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    header {
+      background-color: rgba(10, 10, 10, 0.9);
+      padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .logo {
+      height: 40px;
+    }
+    
+    h1, h2, h3 {
+      font-family: 'Orbitron', sans-serif;
+    }
+    
+    h1 {
+      color: var(--primary);
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    
+    .hero {
+      padding: 180px 0 100px;
+      text-align: center;
+      background: linear-gradient(135deg, #000428, #004e92);
+    }
+    
+    .positions {
+      padding: 80px 0;
+    }
+    
+    .position-card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 8px;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-left: 4px solid var(--primary);
+    }
+    
+    .position-title {
+      color: var(--primary);
+      margin-top: 0;
+    }
+    
+    .apply-section {
+      text-align: center;
+      padding: 60px 0;
+      background: rgba(0,0,0,0.3);
+    }
+    
+    .email-btn {
+      display: inline-block;
+      background: var(--primary);
+      color: var(--dark);
+      padding: 15px 30px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.1rem;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+    }
+    
+    .email-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,255,204,0.3);
+    }
+    
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      background: #000;
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="Logo.png" alt="ReignAgent Logo" class="logo">
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>JOIN OUR TEAM</h1>
+      <p>Help build the future of autonomous cybersecurity solutions</p>
+    </div>
+  </section>
+
+  <section class="positions">
+    <div class="container">
+      <h2>Open Positions</h2>
+      
+      <div class="position-card">
+        <h3 class="position-title">1. Graphic Designer</h3>
+        <p>Create visually stunning designs for our cybersecurity products and marketing materials. We're looking for someone with a keen eye for modern, tech-inspired aesthetics.</p>
+        <p><strong>Skills needed:</strong> UI/UX design, branding, Adobe Creative Suite, Figma</p>
+      </div>
+      
+      <div class="position-card">
+        <h3 class="position-title">2. Software Developer</h3>
+        <p>Develop core components of our BlackPanther penetration testing platform and other security tools. Strong Python skills required.</p>
+        <p><strong>Skills needed:</strong> Python, Django/Flask, cybersecurity fundamentals, API development</p>
+      </div>
+      
+      <div class="position-card">
+        <h3 class="position-title">3. Reinforcement Learning Researcher</h3>
+        <p>Advance our differential reward mechanisms and human-like behavior models for autonomous security agents.</p>
+        <p><strong>Skills needed:</strong> RL frameworks (PyTorch/TensorFlow), ML algorithms, cybersecurity knowledge</p>
+      </div>
+      
+      <div class="position-card">
+        <h3 class="position-title">4. Mathematician</h3>
+        <p>Develop novel algorithms and cryptographic approaches for our security systems. Strong theoretical background required.</p>
+        <p><strong>Skills needed:</strong> Advanced mathematics, cryptography, algorithm design</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="apply-section">
+    <div class="container">
+      <h2>How To Apply</h2>
+      <p>Simply email your resume to our hiring team. We'll review all submissions and contact you if there's a potential fit.</p>
+      <a href="mailto:kparekh@reignagent.com?subject=Job Application - [Position Name]&body=Hello ReignAgent Team,%0D%0A%0D%0AI'm interested in applying for [Position Name].%0D%0A%0D%0AAttached is my resume for your consideration.%0D%0A%0D%0ABest regards,%0D%0A[Your Name]" class="email-btn">Email Your Resume</a>
+      <p><small>Replace [Position Name] and [Your Name] in the email template</small></p>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white-50 py-4 mt-5">
+    <div class="container text-center">
+      <p>&copy; 2025 ReignAgent. All rights reserved.</p>
+      <p>Designed with <span class="text-danger">&hearts;</span> by ReignAgent Team</p>
+    </div>
+  </footer>
+</body>
+</html>
